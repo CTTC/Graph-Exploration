@@ -66,3 +66,78 @@ Graph:
  |      |
 (1) —— (2)
 ```
+
+---
+###`acyclicity.cpp`
+* Function: check if the graph contains a cycle
+* Input Format:
+   * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
+   * The vertices are always numbered from 1 to n. 
+   * Each of the following m lines defines an directed edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge. And the edge is from u to v.
+* Output Format: Output 1 if there is a cycle in the graph and 0 otherwise.
+
+####Example:
+
+#####Input:
+```
+4 4
+1 2
+4 1
+2 3
+3 1
+
+```
+#####Output:
+```
+1
+```
+Note: This graph contains a cycle: 3 → 1 → 2 → 3.
+
+---
+###`toposort.cpp`
+* Function: Compute a topological ordering of a given directed acyclic graph (DAG) with n vertices and m edges
+* Input Format:
+   * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
+   * The vertices are always numbered from 1 to n. 
+   * Each of the following m lines defines an directed edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge. And the edge is from u to v.
+* Output Format: Output any topological ordering of its vertices.
+
+####Example:
+
+#####Input:
+```
+4 3
+1 2
+4 1
+3 1
+
+```
+#####Output:
+```
+4 3 1 2
+```
+
+---
+###`strongly_connected.cpp`
+* Function: Compute the number of strongly connected components of a given directed graph with n vertices and m edges.
+* Input Format:
+   * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
+   * The vertices are always numbered from 1 to n. 
+   * Each of the following m lines defines an directed edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge. And the edge is from u to v.
+* Output Format: Output the number of strongly connected components.
+
+####Example:
+
+#####Input:
+```
+4 4
+1 2
+4 1
+2 3
+3 1
+
+```
+#####Output:
+```
+2
+```
