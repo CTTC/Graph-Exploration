@@ -170,3 +170,29 @@ of a shortest path between u and v (that is, the minimum number of edges in a pa
 ```
 ---
 ###`bipartite.cpp`
+
+* Function: Given an undirected graph with n vertices and m edges and two vertices u and v, check whether it
+is bipartite. Definition for bipartite: a graph is bipartite if its vertices can be colored with two colors
+(say, black and white) such that the endpoints of each edge have dierent colors.
+* Input Format:
+   * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
+   * The vertices are always numbered from 1 to n. 
+   * Each of the following m lines defines an directed edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge. And the edge is from u to v.
+* Output Format: Output 1 if the graph is bipartite and 0 otherwise.
+
+####Example:
+
+#####Input:
+```
+4 4
+1 2
+4 1
+2 3
+3 1
+2 4
+
+```
+#####Output:
+```
+0
+```
