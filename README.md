@@ -2,7 +2,7 @@
 
 ---
 ### `connected_components.cpp`
-* Function: find the number of connected components in a graph
+* Function: find the number of **connected components** in a graph
 * Input Format:
    * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
    * The vertices are always numbered from 1 to n. 
@@ -33,7 +33,7 @@ Graph:
 
 ---
 ###`reachability.cpp`
-* Function: find if two vertices are reachable from each other
+* Function: find if two vertices are **reachable from each other**
 * Input Format:
    * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
    * The vertices are always numbered from 1 to n. 
@@ -69,7 +69,7 @@ Graph:
 
 ---
 ###`acyclicity.cpp`
-* Function: check if the graph contains a cycle
+* Function: check if the **graph contains a cycle**
 * Input Format:
    * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
    * The vertices are always numbered from 1 to n. 
@@ -95,7 +95,7 @@ Note: This graph contains a cycle: 3 → 1 → 2 → 3.
 
 ---
 ###`toposort.cpp`
-* Function: Compute a topological ordering of a given directed acyclic graph (DAG) with n vertices and m edges
+* Function: Compute **a topological ordering** of a given **directed acyclic graph (DAG)** with n vertices and m edges
 * Input Format:
    * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
    * The vertices are always numbered from 1 to n. 
@@ -119,7 +119,7 @@ Note: This graph contains a cycle: 3 → 1 → 2 → 3.
 
 ---
 ###`strongly_connected.cpp`
-* Function: Compute the number of strongly connected components of a given directed graph with n vertices and m edges.
+* Function: Compute the number of **strongly connected components** of a given directed graph with n vertices and m edges.
 * Input Format:
    * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
    * The vertices are always numbered from 1 to n. 
@@ -145,7 +145,7 @@ Note: This graph contains a cycle: 3 → 1 → 2 → 3.
 ---
 ###`bfs.cpp`
 * Function: Given an undirected graph with n vertices and m edges and two vertices u and v, compute the length
-of a shortest path between u and v (that is, the minimum number of edges in a path from u to v).
+of a shortest path between u and v (that is, the minimum number of edges in a path from u to v). It is computed based on **breadth-first search** algorithm.
 * Input Format:
    * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
    * The vertices are always numbered from 1 to n. 
@@ -172,8 +172,7 @@ of a shortest path between u and v (that is, the minimum number of edges in a pa
 ###`bipartite.cpp`
 
 * Function: Given an undirected graph with n vertices and m edges and two vertices u and v, check whether it
-is bipartite. Definition for bipartite: a graph is bipartite if its vertices can be colored with two colors
-(say, black and white) such that the endpoints of each edge have dierent colors.
+is bipartite. It is checked based on **breadth-first search** algorithm.Definition for bipartite: a graph is bipartite if its vertices can be colored with two colors (say, black and white) such that the endpoints of each edge have dierent colors.
 * Input Format:
    * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
    * The vertices are always numbered from 1 to n. 
