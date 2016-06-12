@@ -141,3 +141,32 @@ Note: This graph contains a cycle: 3 → 1 → 2 → 3.
 ```
 2
 ```
+
+---
+###`bfs.cpp`
+* Function: Given an undirected graph with n vertices and m edges and two vertices u and v, compute the length
+of a shortest path between u and v (that is, the minimum number of edges in a path from u to v).
+* Input Format:
+   * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
+   * The vertices are always numbered from 1 to n. 
+   * Each of the following m lines defines an directed edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge. And the edge is from u to v.
+* Output Format: Output the minimum number of edges in a path from u to v, or 􀀀1 if there is no path.
+
+####Example:
+
+#####Input:
+```
+4 4
+1 2
+4 1
+2 3
+3 1
+2 4
+
+```
+#####Output:
+```
+2
+```
+---
+###`bipartite.cpp`
