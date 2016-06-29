@@ -195,3 +195,96 @@ is bipartite. It is checked based on **breadth-first search** algorithm.Definiti
 ```
 0
 ```
+
+---
+###`dijkstra.cpp`
+
+* Function: Given an directed graph with positive edge weights and with n vertices and m edges as well as two vertices u and v, compute the weight of a shortest path between u and v (that is, the minimum total weight of a path from u to v). This file utilized the **Dijkstra Algorithm**.
+* Input Format:
+   * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
+   * The vertices are always numbered from 1 to n. 
+   * Each of the following m lines defines an directed edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge. And the edge is from u to v. The third number in the line is the weight of the edge.
+   * The last line is starting vertex and ending vertex.
+* Output Format: Output the minimum weight of a path from u to v, or 􀀀1 if there is no path.
+
+####Example:
+
+#####Input:
+```
+4 4
+1 2 1
+4 1 2
+2 3 2
+1 3 5
+1 3
+
+```
+#####Output:
+```
+3
+```
+
+---
+###`negative_cycle.cpp`
+
+* Function: Given an directed graph with possibly negative edge weights and with n vertices and m edges, check whether it contains **a cycle of negative weight**.
+* Input Format:
+   * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
+   * The vertices are always numbered from 1 to n. 
+   * Each of the following m lines defines an directed edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge. And the edge is from u to v. The third number in the line is the weight of the edge.
+* Output Format: Output 1 if the graph contains a cycle of negative weight and 0 otherwise.
+
+####Example:
+
+#####Input:
+```
+4 4
+1 2 -5
+4 1 2
+2 3 2
+3 1 1
+
+```
+#####Output:
+```
+1
+```
+
+---
+###`shortest_paths.cpp`
+
+* Function: Given a directed graph with possibly negative edge weights and with n vertices and m edges as well as its vertex s, compute the length of shortest paths from s to all other vertices of the graph.
+* Input Format:
+   * The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively. 
+   * The vertices are always numbered from 1 to n. 
+   * Each of the following m lines defines an directed edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge. And the edge is from u to v. The third number in the line is the weight of the edge.
+   * The last line is starting vertex.
+* Output Format: For all vertices i from 1 to n output the following on a separate line:
+   * "*", if there is no path from s to u;
+   * "-", if there is a path from s to u, but there is no shortest path from s to u (that is, the distance from s to u is 􀀀1);
+   * the length of a shortest path otherwise.
+
+####Example:
+
+#####Input:
+```
+6 7
+1 2 10
+2 3 5
+1 3 100
+3 5 7
+5 4 10
+4 3 -18
+6 1 -1
+1
+
+```
+#####Output:
+```
+0
+10
+-
+-
+-
+*
+```
