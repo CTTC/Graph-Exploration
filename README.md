@@ -288,3 +288,63 @@ is bipartite. It is checked based on **breadth-first search** algorithm.Definiti
 -
 *
 ```
+
+
+---
+###`connecting_points.cpp`
+
+* Function: Given n points on a plane, connect them with segments of minimum total length such that there is a path between any two points.This file is based on **Kruskal’s algorithm for Minimum Spanning Tree**.
+* Input Format:
+   * The first line contains the number n of points. Each of the following n lines defines a point (xi, yi)
+* Output Format: Output the minimum total length of segments
+
+####Example:
+
+#####Input:
+```
+5
+0 0
+0 2
+1 1
+3 0
+3 2
+
+```
+#####Output:
+```
+7.064495102
+```
+
+---
+###`clustering.cpp`
+
+* Function: Given n points on a plane and an integer k, compute the largest possible value of d such that the given points can be partitioned into k non-empty subsets in such a way that the distance between any two points from different subsets is at least d.This file is based on **Kruskal’s algorithm for clustering**.
+* Input Format:
+   * The first line contains the number n of points. Each of the following n lines defines a point (xi, yi). 
+   * The last line contains the number k of clusters.
+* Output Format: Output the largest value of d.
+
+####Example:
+
+#####Input:
+```
+12
+7 6
+4 3
+5 1
+1 7
+2 7
+5 7
+3 3
+7 8
+2 8
+4 4
+6 7
+2 6
+3
+
+```
+#####Output:
+```
+2.828427124746
+```
